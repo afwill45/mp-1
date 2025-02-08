@@ -28,6 +28,8 @@
   #nav_comb {
     display: flex;
     min-height: 100vh;
+    
+
   }
   
   /* Navigation styling */
@@ -120,3 +122,185 @@
     font-weight: bold;
   }
   
+
+
+  @media screen and (max-width: 900px) {
+    /* Header: center its contents with a new dark slate background */
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      background-color: #203040;
+    }
+  
+    /* Main container: switch to column layout and full width */
+    #site-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* Navigation: take full width, move to the top with order, and use new colors */
+    nav {
+      width: 100%;
+      order: -1; /* Places nav before the rest of the content */
+      background-color: #405060;
+      padding: 8px 0;
+    }
+  
+    #nav_comb{
+        flex-direction: column;
+    }
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #608090;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav li {
+      font-size: 1.2rem;
+      background-color: #90a0b0;
+      padding: 8px 10px;
+      margin: 4px;
+      border-radius: 6px;
+    }
+  
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  
+    /* Main content area: full width with new light background */
+    main {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #f8f8f8;
+      padding: 16px;
+    }
+  
+    main p {
+      margin: 12px 16px;
+      font-size: 1.1rem;
+      color: #333333;
+    }
+  
+    /* Adjust the profile image so it scales and centers nicely */
+    #profile-photo {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    /* Content wrapper: center and stack content vertically */
+    #content-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    /* Text block: centered with a little margin */
+    #text-section {
+      align-self: center;
+      width: 90%;
+      margin: 10px;
+    }
+  
+    /* Image block: centered with vertical margin */
+    #image-section {
+      margin: 10px auto;
+    }
+  
+    /* Page heading: centered with a distinct red tone */
+    #page-heading {
+      text-align: center;
+      color: #a83232;
+    }
+  }
+  
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#calculator {
+  background: #f8f8f8;
+  border: 2px solid #ccc;
+  padding: calc(10px + 1vw);
+  margin: calc(20px + 2vw) auto;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#calculator h2 {
+  font-size: calc(18px + 1vw);
+  margin-bottom: calc(10px + 1vw);
+}
+
+.calc-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: calc(10px + 0.5vw);
+  margin-bottom: calc(15px + 1vw);
+}
+
+.calc-inputs input {
+  padding: calc(8px + 0.5vw);
+  font-size: calc(14px + 0.5vw);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.calc-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(10px + 0.5vw);
+  justify-content: center;
+  margin-bottom: calc(15px + 1vw);
+}
+
+.calc-buttons button {
+  padding: calc(8px + 0.5vw) calc(12px + 0.5vw);
+  font-size: calc(14px + 0.5vw);
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  flex: 1 1 calc(30% - 10px);
+  max-width: calc(30% - 10px);
+}
+
+.calc-buttons button:hover {
+  background-color: #45a049;
+}
+
+.calc-output h3 {
+  font-size: calc(16px + 0.5vw);
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  #calculator {
+    padding: calc(8px + 1vw);
+    margin: calc(10px + 2vw);
+  }
+  .calc-buttons button {
+    flex: 1 1 calc(45% - 10px);
+    max-width: calc(45% - 10px);
+  }
+}

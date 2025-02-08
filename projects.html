@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects</title>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <script src = "script.js"> </script>
+  <header>
+    <h1>Afolabi Williams's Resume</h1>
+  </header>
+  <div id="nav_comb">
+    <nav id="nav_bar">
+      <ul>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="exp.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="resume.html">Home</a></li>
+      </ul>
+    </nav>
+    <div id="main">
+      <main>
+        <h3>Projects</h3>
+        <h4>Tetris Neural Network</h4>
+        <ul>
+          <li>Developed a Java-based AI model using reinforcement learning that optimized gameplay and achieved a high learning curve.</li>
+        </ul>
+        <h4>Battleship Game Statistical Analysis AI Model</h4>
+        <ul>
+          <li>Created a Java function that performs a probabilistic search and generates a heat map of all possible ship locations, optimizing the win rate in any game of Battleship.</li>
+        </ul>
+        <h4>Voter Waiting Time Estimation Program | Tech for Change Civic Tech Hackathon</h4>
+        <ul>
+          <li>Developed a full-stack application that displays estimated waiting times for all Massachusetts polling stations using front-end frameworks, ArcGIS, Python, and API integration.</li>
+        </ul>
+        <div id="calculator">
+          <h2>Calculator</h2>
+          <div class="calc-inputs">
+            <input type="text" id="first-number" placeholder="Enter first number">
+            <input type="text" id="second-number" placeholder="Enter second number">
+          </div>
+          <div class="calc-buttons">
+            <button onclick="addition()">+</button>
+            <button onclick="subtraction()">–</button>
+            <button onclick="multiplication()">*</button>
+            <button onclick="division()">/</button>
+            <button onclick="power()">^</button>
+            <button onclick="clearCalculator()">Clear</button>
+          </div>
+          <div class="calc-output">
+            <h3 id="output"></h3>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <footer>
+    <a href="credits.html">All Rights Reserved by Afolabi Williams.</a>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
