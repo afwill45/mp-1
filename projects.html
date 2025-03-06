@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Resume</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="style.css">
+  <!-- Two-part title: current page + website name -->
+  <title>Projects | Afolabi Williams's Resume</title>
+  <!-- You can keep the Google Fonts link if you like, but ensure @import is at the top in your CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Afolabi Williams's Resume</h1>
   </header>
+
   <div id="nav_comb">
     <nav id="nav_bar">
       <ul>
@@ -17,30 +19,41 @@
         <li><a href="exp.html">Experience</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="awards.html">Awards</a></li>
-        <li><a href="resume.html">Home</a></li>
+        <!-- Link back to index.html (Home) -->
+        <li><a href="index.html">Home</a></li>
       </ul>
     </nav>
+
     <div id="main">
       <main>
         <h3>Projects</h3>
+
         <h4>Tetris Neural Network</h4>
         <ul>
           <li>Developed a Java-based AI model using reinforcement learning that optimized gameplay and achieved a high learning curve.</li>
         </ul>
+
         <h4>Battleship Game Statistical Analysis AI Model</h4>
         <ul>
           <li>Created a Java function that performs a probabilistic search and generates a heat map of all possible ship locations, optimizing the win rate in any game of Battleship.</li>
         </ul>
+
         <h4>Voter Waiting Time Estimation Program | Tech for Change Civic Tech Hackathon</h4>
         <ul>
           <li>Developed a full-stack application that displays estimated waiting times for all Massachusetts polling stations using front-end frameworks, ArcGIS, Python, and API integration.</li>
         </ul>
+
+        <!-- Calculator Section with Labels -->
         <div id="calculator">
           <h2>Calculator</h2>
           <div class="calc-inputs">
+            <label for="first-number">First Number</label>
             <input type="text" id="first-number" placeholder="Enter first number">
+
+            <label for="second-number">Second Number</label>
             <input type="text" id="second-number" placeholder="Enter second number">
           </div>
+
           <div class="calc-buttons">
             <button onclick="addition()">+</button>
             <button onclick="subtraction()">–</button>
@@ -49,6 +62,7 @@
             <button onclick="power()">^</button>
             <button onclick="clearCalculator()">Clear</button>
           </div>
+
           <div class="calc-output">
             <h3 id="output"></h3>
           </div>
@@ -56,9 +70,11 @@
       </main>
     </div>
   </div>
+
   <footer>
     <a href="credits.html">All Rights Reserved by Afolabi Williams.</a>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
